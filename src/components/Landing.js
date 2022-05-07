@@ -70,7 +70,7 @@ export default function Landing() {
         <h1 className="section-divider-title">What is Empath?</h1>
         <AboutTiles />
         <div style={{color: 'white', marginTop: '6rem', fontFamily: 'Helvetica, Arial, sans-serif'}}>
-            <div className="section-title">Optimal Usage for Empath</div>
+            <div className="section-title">What can Empath be used for?</div>
             <ContentMini />
         </div>
       </section>
