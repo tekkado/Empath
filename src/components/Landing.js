@@ -3,7 +3,7 @@ import Typed from 'typed.js';
 import { useEffect, useRef } from 'react';
 import AboutTiles from './AboutTile';
 import ContentMini from './ContentMini';
-import ExperimentSection from "./ExperimentSection";
+import YoutubeInputForm from './YoutubeInputForm';
 
 export default function Landing() {
   // Create Ref element.
@@ -75,7 +75,7 @@ export default function Landing() {
         </div>
       </section>
 
-      <ExperimentSection />
+      <YoutubeInputForm />
     </>
   );
 }
