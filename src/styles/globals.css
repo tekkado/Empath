@@ -130,3 +130,7 @@ html {
         display: none;
     }
 }
+
+.text-input-field {
+    margin-top: 2rem;
+}
