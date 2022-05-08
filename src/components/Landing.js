@@ -1,9 +1,9 @@
-import illustration from './illustrations/casual1.png';
-import Typed from 'typed.js';
-import { useEffect, useRef } from 'react';
-import AboutTiles from './AboutTile';
-import ContentMini from './ContentMini';
-import YoutubeInputForm from './YoutubeInputForm';
+import illustration from "./illustrations/casual1.png";
+import Typed from "typed.js";
+import { useEffect, useRef } from "react";
+import AboutTiles from "./AboutTile";
+import ContentMini from "./ContentMini";
+import YoutubeInputForm from "./YoutubeInputForm";
 
 export default function Landing() {
   // Create Ref element.
@@ -12,9 +12,9 @@ export default function Landing() {
   useEffect(() => {
     const typed = new Typed(el.current, {
       strings: [
-        'Made with ❤️ by Devarshi',
-        'Made with ❤️ by Minal',
-        'Made with ❤️ by Than',
+        "Made with ❤️ by Devarshi",
+        "Made with ❤️ by Minal",
+        "Made with ❤️ by Than",
       ],
 
       // Speed settings, try diffrent values untill you get good results
@@ -25,7 +25,7 @@ export default function Landing() {
       smartBackspace: true,
       loop: true,
       showCursor: true,
-      cursorChar: '!',
+      cursorChar: "!",
     });
 
     // Destropying
@@ -38,18 +38,22 @@ export default function Landing() {
     <>
       <div className="columns Landing">
         <div className="column vert-center">
-          <div style={{ fontSize: '3.75rem' }} className="landing-title">
+          <div style={{ fontSize: "3.75rem" }} className="landing-title">
             Use the power of Empathy
           </div>
-          
+
           <div
-            style={{ fontSize: '2.35rem', marginBottom: '1.5rem' }}
+            style={{ fontSize: "2.35rem", marginBottom: "1.5rem" }}
             className="landing-title"
-          >and profit off of it.
+          >
+            and profit off of it.
           </div>
-          
+
           <div className="has-text-centered">
-            <button className="button is-danger is-light is-medium is-rounded is-focused center-btn">
+            <button onClick={() => { el.current.scrollIntoView({ behavior: "smooth"});}}
+              className="button is-danger is-light is-medium is-rounded is-focused center-btn"
+              href="#jump"
+            >
               Get Started
             </button>
             <div className="advisory-text">
@@ -69,9 +73,15 @@ export default function Landing() {
       <section className="section is-medium">
         <h1 className="section-divider-title">What is Empath?</h1>
         <AboutTiles />
-        <div style={{color: 'white', marginTop: '6rem', fontFamily: 'Helvetica, Arial, sans-serif'}}>
-            <div className="section-title">What can Empath be used for?</div>
-            <ContentMini />
+        <div
+          style={{
+            color: "white",
+            marginTop: "6rem",
+            fontFamily: "Helvetica, Arial, sans-serif",
+          }}
+        >
+          <div className="section-title">What can Empath be used for?</div>
+          <ContentMini />
         </div>
       </section>
 
