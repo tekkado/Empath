@@ -39,14 +39,14 @@ export default function Landing() {
       <div className="columns Landing">
         <div className="column vert-center">
           <div style={{ fontSize: "3.75rem" }} className="landing-title">
-            Use the power of Empathy
+            Empath
           </div>
 
           <div
             style={{ fontSize: "2.35rem", marginBottom: "1.5rem" }}
             className="landing-title"
           >
-            and profit off of it.
+            your go-to advanced sentiment analysis engine.
           </div>
 
           <div className="has-text-centered">
